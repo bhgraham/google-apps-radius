@@ -4,9 +4,7 @@ This is a RADIUS server that authenticates against a Google Apps domain. It was 
 
 ## Installing
 
-Installation can be done via [npm](https://www.npmjs.org/):
-
-    npm install -g google-apps-radius
+This version needs to be manually installed from source
 
 ## Usage
 
