@@ -8,10 +8,9 @@ This version needs to be manually installed from source
 
 ## Usage
 
-    Usage: google-apps-radius --address <address> --port [port] --domain <domain> --secret <secret>
+    Usage: google-apps-radius --address <address> --port [port] --secret <secret>
 
     Options:
-      --domain   [required]
       --secret   [required]
       --port     [default: 1812]
       --address  [default: "0.0.0.0"]
