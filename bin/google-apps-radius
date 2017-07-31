@@ -20,7 +20,7 @@ var googleAppsRadius = require('../');
 
 var argv = require('yargs')
   .usage('Usage: $0 --address <address> --port [port] --secret <secret>')
-  .demand(['domain', 'secret'])
+  .demand(['secret'])
   .default('port', 1812)
   .string('address')
   .default('address', '0.0.0.0')
