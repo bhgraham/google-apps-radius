@@ -20,7 +20,7 @@ var googleAppsRadius = require('../');
 
 var argv = require('yargs')
   .usage('Usage: $0 --address <address> --port [port] --secret <secret> --domains')
-  .demand(['secret'])
+  .demand(['secret', 'domains'])
   .default('port', 1812)
   .string('address')
   .default('address', '0.0.0.0')
@@ -30,6 +30,8 @@ var argv = require('yargs')
 
 if (argv.domains) {
     argv.domains = argv.domains.split(',');
+} else {
+    argv.domains = ['gmail.com'];
 }
 
 var server = googleAppsRadius.createServer({
