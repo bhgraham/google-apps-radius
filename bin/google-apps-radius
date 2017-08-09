@@ -28,7 +28,9 @@ var argv = require('yargs')
   .string('secret')
   .argv;
 
-argv.domains = argv.domains.split(',')
+if (argv.domains) {
+    argv.domains = argv.domains.split(',');
+}
 
 var server = googleAppsRadius.createServer({
   domains: argv.domains,
