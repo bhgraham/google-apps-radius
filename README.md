@@ -10,13 +10,14 @@ Installation can be done via [npm](https://www.npmjs.org/):
 
 ## Usage
 
-    Usage: google-apps-radius --address <address> --port [port] --domain <domain> --secret <secret>
+    Usage: google-apps-radius --address <address> --port [port] --domain <domain> --secret <secret> --alloweddomains <alloweddomains>
 
     Options:
       --domain   [required]
       --secret   [required]
       --port     [default: 1812]
       --address  [default: "0.0.0.0"]
+      --alloweddomains [acme.com.br,contoso.com,yourcomany.org]
 
 ## Known limitations
 
@@ -25,6 +26,7 @@ Installation can be done via [npm](https://www.npmjs.org/):
 ## Author
 
 Tim Cooper <<tim.cooper@layeh.com>>
+Gustavo Maloste <<gustavomaloste@gmail.com>>
 
 ## License
 
